@@ -1,0 +1,69 @@
+a:link{color:#551A8B;} 
+a:visited{color:#551A8B;} 
+a:hover{color:brown;}
+
+p{white-space:pre-line; margin:0px; font-family:'Calibri'}
+p:first-line {line-height:0;}
+
+h4{margin-top: 4px; margin-bottom: 12px; font-size: 15px;}
+
+table, th, td{
+    border-collapse:collapse;
+    border: 1px solid black;
+    vertical-align: top;
+    padding: 8px;
+}
+
+td:first-child{width:1px;}
+
+body{margin: 0;font-family: 'Cambria';}
+
+.body{margin: 8px; }
+
+.navbar {
+    background-color: #333;
+    font-size: 0px;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+}
+.navbar a:hover {background-color: #444;}
+.navbar a.active {background-color: #b11;}
+
+@media screen and (max-width: 600px) {
+    .navbar a {display: block;}
+}
+
+
+.filteredtable tbody tr, .tablefilter{display:none;}
+
+#nes.tablefilter:checked ~ table tbody tr.nes,
+#sms.tablefilter:checked ~ table tbody tr.sms,
+#gen.tablefilter:checked ~ table tbody tr.gen,
+#tg16.tablefilter:checked ~ table tbody tr.tg16,
+#snes.tablefilter:checked ~ table tbody tr.snes,
+#gb.tablefilter:checked ~ table tbody tr.gb,
+#msx2.tablefilter:checked ~ table tbody tr.msx2,
+#c64.tablefilter:checked ~ table tbody tr.c64,
+#dos.tablefilter:checked ~ table tbody tr.dos,
+#a8.tablefilter:checked ~ table tbody tr.a8,
+#c64-retro.tablefilter:checked ~ table tbody tr.c64-retro
+{
+    display:table-row;
+}
+
+.tablefilter + label {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+.tablefilter:checked + label {
+    background-color: #b11;
+}
