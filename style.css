@@ -54,8 +54,8 @@ body{margin: 0;font-family: 'Cambria';}
 #msx2.tablefilter:checked ~ table tbody tr.msx2,
 #c64.tablefilter:checked ~ table tbody tr.c64,
 #dos.tablefilter:checked ~ table tbody tr.dos,
-#a8.tablefilter:checked ~ table tbody tr.a8,
-#c64-retro.tablefilter:checked ~ table tbody tr.c64-retro
+#mac.tablefilter:checked ~ table tbody tr.mac,
+#a8.tablefilter:checked ~ table tbody tr.a8
 {
     display:table-row;
 }
